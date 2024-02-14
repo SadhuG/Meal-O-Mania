@@ -1,0 +1,441 @@
+/* Font Guide
+.tiro-devanagari hindi-regular {
+    font-family: "Tiro Devanagari Hindi", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.tiro-devanagari hindi-regular-italic {
+    font-family: "Tiro Devanagari Hindi", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+<weight>: Use a value from 200 to 800
+
+.plus-jakarta sans-serif {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200..800;
+    font-style: normal;
+} 
+*/
+
+/* Zero Styles */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+img {
+    margin: 0;
+}
+
+/* Base Styles*/
+
+:root {
+    --logo_backgrnd_img: linear-gradient(0deg, #F9F2EA90, #F9F2EA90), url(images/logo_background.png) center center / cover no-repeat;
+}
+
+body {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 24px;
+    font-style: normal;
+    text-wrap: wrap;
+    color: #082B31;
+    background-color: #F9F2EA;
+}
+
+section div {
+    width: auto;
+    display: flex;
+}
+
+a {
+    color: #082B31
+}
+
+main {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* Spacers */
+.spacer_80px {
+    width: 100%;
+    height: 80px;
+}
+
+.spacer_32px {
+    width: 100%;
+    height: 32px;
+}
+
+/* Nav */
+nav {
+    width: 100%;
+    display: flex;
+}
+
+.nav_wrapper {
+    width: 100%;
+    padding: 0 70px;
+    height: 80px;
+}
+
+.nav_container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+}
+
+.nav_logo_container {
+    background: var(--logo_backgrnd_img);
+    padding: 8px 24px;
+    border-radius: 500px;
+}
+
+.nav_logo {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.nav_mobile_icon {
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.top_bar {
+    width: 48px;
+    height: 8px;
+    background-color: #F9F2EA;
+    border-radius: 50px;
+}
+
+.middle_bar {
+    width: 56px;
+    height: 8px;
+    background-color: #F9F2EA;
+    border-radius: 50px;
+}
+
+.bottom_bar {
+    width: 48px;
+    height: 8px;
+    background-color: #F9F2EA;
+    border-radius: 50px;
+}
+
+.nav_menu {
+    flex-direction: row;
+    gap: 56px;
+}
+
+.nav_item_text {
+    font-weight: 600;
+}
+
+/* Hero */
+.hero_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 0;
+}
+
+.hero_container {
+    width: 1338px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.home_hero_img {
+    border-radius: 16px;
+}
+
+.hero_heading_wrapper {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+
+.hero_heading {
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.hero_text_wrapper {
+    padding-top: 16px;
+}
+
+.hero_text {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+/* Introduction */
+.intro_wrapper {
+    display: flex;
+}
+
+.intro_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 70px;
+    text-align: center;
+    gap: 48px;
+}
+
+.intro_heading {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.intro_text {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+/* Warning */
+.warning_wrapper {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 48px;
+    padding: 16px 0;
+    background-color: #EB8393;
+}
+
+.warning_container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 48px;
+}
+
+.warning_text {
+    font-size: 32px;
+    font-weight: 700;
+    text-wrap: nowrap;
+}
+
+/* Meal Cards */
+.meal_card_wrapper {
+    display: flex;
+    padding: 0 70px;
+}
+
+.meal_card_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    gap: 24px;
+    background-color: #87CEEB40;
+    border-radius: 32px;
+}
+
+.meal_card {
+    flex-direction: column;
+    padding: 32px;
+    gap: 24px;
+    background: radial-gradient(100% 100% at 0% 0%, #F9F2EA 0%, rgba(249, 242, 234, 0) 50%, #F9F2EA 150%);
+    border-radius: 24px;
+}
+
+.meal_img {
+    width: 332px;
+    height: 278px;
+    max-width: 332px;
+    max-height: 278px;
+    border-radius: 16px;
+}
+
+.meal_card_text {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+/* Dishes Displayed */
+.dishes_displayed_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.dishes_displayed_container {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 16px 0;
+    gap: 16px;
+}
+
+.dishes_displayed_container_reverse {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 16px 0;
+    gap: 16px;
+    filter: blur(4px);
+}
+
+.dishes_displayed_img_wrapper {
+    width: 278px;
+    height: 278px;
+    border-radius: 16px;
+}
+
+.dishes_displayed_img {
+    width: 278px;
+    height: 278px;
+}
+
+/* Foot Note */
+.foot_note_wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.foot_note_container {
+    z-index: 100;
+    height: 100%;
+    position: absolute;
+    padding: 0 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(0deg, #F9F2EA70, #F9F2EA70);
+}
+
+.foot_note_heading {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.foot_note_text {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.foot_note_text_hindi {
+    font-family: "Tiro Devanagari Hindi", serif;
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    display: flex;
+}
+
+.footer_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 70px 8px;
+}
+
+.footer_container {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 0 40px;
+}
+
+.footer_column_1 {
+    padding: 24px;
+}
+
+.footer_column_2 {
+    flex-direction: column;
+    padding: 24px;
+}
+
+.footer_column_3 {
+    flex-direction: column;
+    padding: 24px;
+}
+
+.footer_logo_container {
+    background: var(--logo_backgrnd_img);
+    padding: 24px;
+    border-radius: 500px;
+}
+
+.footer_logo {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.sitemap_item {
+    font-weight: 700;
+}
+
+.contact_heading {
+    font-weight: 700;
+}
+
+.contact_item_container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+}
+
+.contact_link {
+    color: black;
+}
+
+.contact_item {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.ending_container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ending_text {
+    font-size: 16px;
+    font-weight: 500;
+}
